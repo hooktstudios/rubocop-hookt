@@ -1,0 +1,79 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  # Let Rubocop determine Rails and Ruby version
+  TargetRubyVersion: ~
+  TargetRailsVersion: ~
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  ExtraDetails: true
+  CacheRootDirectory: ./tmp
+  Exclude:
+    - bin/**/*
+    - bin/**/*
+    - db/*
+    - db/seeds/*
+    - log/**/*
+    - tmp/**/*
+    - vendor/**/*
+    - node_modules/**/*
+
+Rails:
+  Enabled: true
+
+Metrics/AbcSize:
+  Max: 30
+Metrics/BlockLength:
+  ExcludedMethods:
+    - draw
+    - configure
+    - setup
+  Exclude:
+    - 'spec/**/*'
+    - '**/*.rake'
+Metrics/CyclomaticComplexity:
+  Max: 10
+Metrics/MethodLength:
+  Max: 20
+Metrics/ModuleLength:
+  Exclude:
+    - 'spec/**/*'
+
+Layout/LineLength:
+  Max: 100
+  Exclude:
+    # Files below are ignored because they are part of rails and we don't want
+    # to have to deal with line length in them.
+    - config/initializers/*
+    - config/environments/*
+Layout/MultilineAssignmentLayout:
+  Enabled: true
+  EnforcedStyle: new_line
+
+Performance/StringReplacement:
+  Enabled: false
+
+RSpec/ExpectInHook:
+  Enabled: false
+RSpec/ExampleLength:
+  Max: 25
+RSpec/MultipleExpectations:
+  Max: 10
+RSpec/NestedGroups:
+  Max: 4
+RSpec/LetSetup:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+Style/GuardClause:
+  Enabled: false
+Style/Lambda:
+  EnforcedStyle: literal
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/SymbolArray:
+  Enabled: false
