@@ -54,6 +54,11 @@ Layout/MultilineAssignmentLayout:
   Enabled: true
   EnforcedStyle: new_line
 
+Lint/RaiseException:
+  Enabled: true
+Lint/StructNewOverride:
+  Enabled: true
+
 Performance/StringReplacement:
   Enabled: false
 
