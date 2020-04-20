@@ -54,6 +54,8 @@ Layout/MultilineAssignmentLayout:
   Enabled: true
   EnforcedStyle: new_line
 
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
 Lint/RaiseException:
   Enabled: true
 Lint/StructNewOverride:
@@ -75,6 +77,8 @@ RSpec/LetSetup:
 
 Style/Documentation:
   Enabled: false
+Style/ExponentialNotation:
+  Enabled: true
 Style/GuardClause:
   Enabled: false
 Style/HashEachMethods:
