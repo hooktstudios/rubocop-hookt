@@ -53,9 +53,9 @@ Layout/LineLength:
 Layout/MultilineAssignmentLayout:
   Enabled: true
   EnforcedStyle: new_line
-
 Layout/SpaceAroundMethodCallOperator:
   Enabled: true
+
 Lint/RaiseException:
   Enabled: true
 Lint/StructNewOverride:
