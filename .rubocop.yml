@@ -20,6 +20,8 @@ AllCops:
     - tmp/**/*
     - vendor/**/*
     - node_modules/**/*
+  # Enable all newly added Cops
+  NewCops: enable
 
 Rails:
   Enabled: true
@@ -53,13 +55,6 @@ Layout/LineLength:
 Layout/MultilineAssignmentLayout:
   Enabled: true
   EnforcedStyle: new_line
-Layout/SpaceAroundMethodCallOperator:
-  Enabled: true
-
-Lint/RaiseException:
-  Enabled: true
-Lint/StructNewOverride:
-  Enabled: true
 
 Performance/StringReplacement:
   Enabled: false
@@ -77,16 +72,8 @@ RSpec/LetSetup:
 
 Style/Documentation:
   Enabled: false
-Style/ExponentialNotation:
-  Enabled: true
 Style/GuardClause:
   Enabled: false
-Style/HashEachMethods:
-  Enabled: true
-Style/HashTransformKeys:
-  Enabled: true
-Style/HashTransformValues:
-  Enabled: true
 Style/Lambda:
   EnforcedStyle: literal
 Style/StringLiterals:
