@@ -46,7 +46,6 @@ Metrics/ModuleLength:
     - 'spec/**/*'
 
 Layout/LineLength:
-  Max: 100
   Exclude:
     # Files below are ignored because they are part of rails and we don't want
     # to have to deal with line length in them.
