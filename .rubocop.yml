@@ -37,6 +37,7 @@ Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
     - '**/*.rake'
+    - 'Gemfile'
 Metrics/CyclomaticComplexity:
   Max: 10
 Metrics/MethodLength:
