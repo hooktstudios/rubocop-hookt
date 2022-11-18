@@ -33,7 +33,9 @@ Metrics/BlockLength:
     - configure
     - draw
     - guard
+    - safety_assured
     - setup
+    - up_only
   Exclude:
     - 'spec/**/*'
     - '**/*.rake'
@@ -41,6 +43,10 @@ Metrics/BlockLength:
 Metrics/CyclomaticComplexity:
   Max: 10
 Metrics/MethodLength:
+  AllowedMethods:
+    - change
+    - down
+    - up
   Max: 20
 Metrics/ModuleLength:
   Exclude:
