@@ -69,6 +69,8 @@ RSpec/ExpectInHook:
   Enabled: false
 RSpec/ExampleLength:
   Max: 25
+RSpec/Focus:
+  AutoCorrect: false
 RSpec/MultipleExpectations:
   Max: 10
 RSpec/MultipleMemoizedHelpers:
