@@ -40,6 +40,8 @@ Metrics/BlockLength:
     - 'spec/**/*'
     - '**/*.rake'
     - 'Gemfile'
+Metrics/ClassLength:
+  CountAsOne: ["array", "hash", "heredoc"]
 Metrics/CyclomaticComplexity:
   Max: 10
 Metrics/MethodLength:
