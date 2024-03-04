@@ -34,6 +34,7 @@ Metrics/BlockLength:
     - configure
     - draw
     - guard
+    - included
     - safety_assured
     - setup
     - up_only
